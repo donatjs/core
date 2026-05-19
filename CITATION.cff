@@ -1,59 +1,67 @@
 cff-version: 1.2.0
 message: >-
-  Jika Anda menggunakan perangkat lunak ini dalam penelitian, harap sitasi
-  menggunakan metadata di bawah ini. DOI tersedia via Zenodo setelah rilis
-  repositori. Ganti placeholder DOI dengan yang ditetapkan oleh Zenodo.
+  If you use this software in your research, please cite it using
+  the metadata below.
 
 title: >-
-  SVG.js: A Lightweight JSON-Driven SVG Icon Rendering Engine
-  for Resource-Constrained Web Environments
+  DonatJS Core: A Zero-Dependency JSON-Driven Client-Side Router
+  and UI Rendering Engine
 
 abstract: >-
-  SVG.js adalah mesin rendering ikon SVG sisi klien yang zero-dependency,
-  memetakan pengidentifikasi ikon ke jalur SVG inline melalui kamus JSON
-  datar. Dikembangkan di Sismadi Lab (sismadi.com) — Experimental Zone,
-  tempat Framework Lahir Sebelum Jadi Produk, milik PT Sismadi Langit Solusi
-  — SVG.js adalah bagian dari generasi framework yang lahir di lab yang sama
-  dengan Ktupad (2019, EC00201952487), BayamJS (2023, EC00202367008), dan
-  DonatJS (2024, EC00202414144), ketiganya terdaftar sebagai Hak Cipta resmi.
-  Di Sismadi Lab, setiap framework dan tools diuji terlebih dahulu sebelum
-  naik ke bahan ajar atau dikemas jadi produk. SVG.js menyediakan kosakata
-  ikon yang dikurasi dengan 60+ path di ruang koordinat viewBox 24×24,
-  mengeliminasi ketergantungan font eksternal dan overhead HTTP, dengan
-  theming penuh melalui CSS custom properties. Pola injeksi kelas di-{key}
-  yang kompatibel dengan DonatJS memastikan integrasi mulus dengan framework
-  web JSON-driven MVC untuk lingkungan pendidikan Indonesia yang terbatas
-  sumber daya.
+  DonatJS Core (script.js) is a zero-dependency, no-build-step client-side
+  rendering (CSR) engine that transforms structured data (JSON) into dynamic
+  web interfaces through a polymorphic component dispatch system. Developed at
+  Sismadi Lab (sismadi.com) — Experimental Zone, where Frameworks Are Born
+  Before Becoming Products — owned by PT Sismadi Langit Solusi. DonatJS is
+  the third generation of the framework lineage born at the same lab:
+  Ktupad (2019, EC00201952487) → BayamJS (2023, EC00202367008) →
+  DonatJS (2024, EC00202414144), all registered as official copyrights at
+  DJKI (Direktorat Jenderal Kekayaan Intelektual), Republic of Indonesia.
+  The architecture rests on three pillars: (1) Micro Routing System based on
+  query strings with History API and automatic fallback resolution;
+  (2) JSON-Driven Component Architecture where all layouts and content are
+  defined as flat JavaScript objects (pages.*) without explicit HTML markup;
+  (3) Polymorphic Render Engine that dispatches component functions
+  (components[section]) based on the section field in data. Built-in
+  components include hero, features, article, titleHero, learningModule
+  (with navigation sidebar), quizEngine (base64-protected), certificate
+  (printable), slideViewer (PREP-structured), and live dataset editor.
+  A Markdown-like lineRenderer supports code blocks, headings, skill bars,
+  timeline steps, inline tables, and form validation. SVG.js integrates
+  via svg.di(), executed automatically on every route navigation.
+  Patent application: S00202503129 (DJKI).
 
 authors:
   - family-names: Sismadi
     given-names: Wawan
     orcid: "https://orcid.org/0009-0007-2685-5663"
     affiliation: >-
-      Program Studi Informatika, Universitas IPWIJA, Jakarta, Indonesia;
+      Program Studi Informatika, Universitas IPWIJA, Bogor, Indonesia;
       Program Doktor Informatika, Universitas Ahmad Dahlan,
       Yogyakarta, Indonesia;
-      PT Sismadi Langit Solusi, Bekasi, Indonesia
-    alias: ktupad
+      PT Sismadi Langit Solusi, Jakarta, Indonesia
+    alias: DonatJS
     email: wawan@sismadi.com
 
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.XXXXXXX"
-    description: >-
-      DOI Zenodo — ganti XXXXXXX dengan DOI aktual yang ditetapkan
-      setelah menerbitkan rilis di GitHub dan menghubungkan ke Zenodo.
+    value: "10.5281/zenodo.20282077"
+    description: "DOI for SVG.js — integrated icon component in the DonatJS ecosystem"
   - type: url
-    value: "https://github.com/ktupad/svg"
-    description: Repositori GitHub
+    value: "https://github.com/donatjs/core"
+    description: "DonatJS Core GitHub repository"
+  - type: url
+    value: "https://donatjs.github.io/core/"
+    description: "DonatJS Core live demo"
   - type: url
     value: "https://sismadi.com"
     description: >-
-      Sismadi Lab — Experimental Zone, tempat framework lahir sebelum jadi
-      produk. Ruang ngoprek terbuka milik PT Sismadi Langit Solusi.
+      Sismadi Lab — Experimental Zone, where frameworks are born before
+      becoming products. Open tinkering space owned by PT Sismadi Langit
+      Solusi.
 
-repository-code: "https://github.com/ktupad/svg"
-url: "https://sismadi.com"
+repository-code: "https://github.com/donatjs/core"
+url: "https://donatjs.github.io/core/"
 license: MIT
 version: "1.0.0"
 date-released: "2024-01-01"
@@ -61,36 +69,62 @@ date-released: "2024-01-01"
 type: software
 
 keywords:
-  - SVG
-  - icon library
+  - DonatJS
+  - client-side routing
   - JSON-driven rendering
   - web framework
-  - DonatJS
-  - Sismadi Lab
   - vanilla JavaScript
   - zero dependency
+  - no-build step
+  - component architecture
+  - polymorphic dispatch
+  - History API
+  - UI engine
+  - Sismadi Lab
   - Indonesian web
   - educational technology
-  - client-side rendering
-  - inline SVG
-  - CSS custom properties
-  - icon gallery
-  - lightweight
+  - low-resource computing
+  - front-end development
+  - web performance
+  - DOM injection
   - PT Sismadi Langit Solusi
+  - quiz engine
+  - certificate verifier
+  - slide viewer
+  - microservices
+  - MVC framework
 
 references:
   - type: software
-    title: "DonatJS: A JSON-Driven MVC Web Framework"
+    title: >-
+      SVG.js: A Lightweight JSON-Driven SVG Icon Rendering Engine
+      for Resource-Constrained Web Environments
     authors:
       - family-names: Sismadi
         given-names: Wawan
         orcid: "https://orcid.org/0009-0007-2685-5663"
-    year: 2024
-    url: "https://github.com/ktupad/donat"
+    year: 2026
+    doi: "10.5281/zenodo.20282077"
+    repository-code: "https://github.com/bayamjs/svg"
     notes: >-
-      DonatJS (EC00202414144, DJKI) adalah framework JSON-driven MVC yang lahir
-      di Sismadi Lab. SVG.js menyediakan lapisan rendering ikon untuk aplikasi
-      yang dibangun di atas DonatJS.
+      SVG.js is the integrated icon rendering component in the DonatJS
+      ecosystem, providing 60+ inline SVG paths in a 24×24 viewBox
+      coordinate space with full theming via CSS custom properties.
+
+  - type: software
+    title: >-
+      Ktupad Core: A Lightweight PHP PDO Engine for JSON-Driven
+      CRUD Operations
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+        orcid: "https://orcid.org/0009-0007-2685-5663"
+    year: 2026
+    doi: "10.5281/zenodo.20273747"
+    repository-code: "https://github.com/ktupad/core"
+    notes: >-
+      Ktupad Core (EC00201952487, DJKI) is the foundational PHP framework
+      from 2019 — the first generation of the lineage that led to DonatJS.
 
   - type: software
     title: "BayamJS: A JavaScript MVC Framework"
@@ -100,21 +134,116 @@ references:
         orcid: "https://orcid.org/0009-0007-2685-5663"
     year: 2023
     notes: >-
-      BayamJS (EC00202367008, DJKI) adalah framework MVC JavaScript pendahulu,
-      lahir di Sismadi Lab pada 2023. Bagian dari silsilah generasi
-      Ktupad (2019) → BayamJS (2023) → DonatJS (2024) → SVG.js (2024).
+      BayamJS (EC00202367008, DJKI) is the second-generation JavaScript MVC
+      framework predecessor, born at Sismadi Lab in 2023. Part of the
+      lineage: Ktupad (2019) → BayamJS (2023) → DonatJS (2024).
 
-  - type: software
-    title: "Ktupad: An MVC PHP Web Platform"
+  - type: article
+    title: >-
+      Penerapan Presensi Daring Berbasis WebAssembly dan Microservices
+      untuk Pengenalan Wajah pada Learning Management System
     authors:
       - family-names: Sismadi
         given-names: Wawan
-        orcid: "https://orcid.org/0009-0007-2685-5663"
-    year: 2019
-    notes: >-
-      Ktupad (EC00201952487, DJKI) adalah framework MVC PHP pertama yang lahir
-      di Sismadi Lab pada 2019 — fondasi awal dari silsilah framework yang
-      berujung pada DonatJS dan SVG.js.
+      - family-names: Riadi
+        given-names: Imam
+      - family-names: Murinto
+        given-names: Murinto
+    year: 2026
+    journal: "EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi"
+    volume: 6
+    issue: 2
+    doi: "10.51878/edutech.v6i2.9474"
+
+  - type: article
+    title: >-
+      Implementasi Arsitektur Microservice pada Aplikasi Bank Sampah
+      Digital Berbasis DonatJS
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+      - family-names: Martono
+        given-names: "Besar Agung"
+      - family-names: Hartini
+        given-names: "Estuti Fitri"
+      - family-names: Putri
+        given-names: "Dika Wahyudanti"
+    year: 2025
+    journal: "CENDEKIA Jurnal Ilmu Pengetahuan"
+    volume: 5
+    issue: 4
+    doi: "10.51878/cendekia.v5i4.7140"
+
+  - type: article
+    title: >-
+      Perbandingan Performa Framework MVC dalam Sistem Kehadiran
+      Berbasis Pengenalan Wajah
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+      - family-names: Martono
+        given-names: "Besar Agung"
+      - family-names: Susanto
+        given-names: Yodi
+      - family-names: Muzaeni
+        given-names: Amin
+    year: 2025
+    journal: "EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi"
+    volume: 5
+    issue: 1
+    doi: "10.51878/edutech.v5i1.4405"
+
+  - type: article
+    title: >-
+      Implementasi Arsitektur Microservices pada Web Aplikasi
+      Penerimaan Mahasiswa Baru
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+      - family-names: Martono
+        given-names: "Besar Agung"
+      - family-names: Susanto
+        given-names: Yodi
+      - family-names: Muzaeni
+        given-names: Amin
+    year: 2024
+    journal: "EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi"
+    volume: 4
+    issue: 2
+    doi: "10.51878/edutech.v4i2.3062"
+
+  - type: article
+    title: >-
+      Comparative Analysis of CodeIgniter, Laravel and Ktupad Frameworks:
+      Case Study Online Exam Applications
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+      - family-names: Martono
+        given-names: "Besar Agung"
+      - family-names: Widyastuti
+        given-names: Titing
+    year: 2022
+    journal: "Indonesian Journal of Applied Research (IJAR)"
+
+  - type: article
+    title: >-
+      Implementasi Pengembangan Aplikasi Ujian Online Menggunakan
+      Ktupad MVC Framework
+    authors:
+      - family-names: Sismadi
+        given-names: Wawan
+      - family-names: Darmawan
+        given-names: Indra
+      - family-names: Wahyudi
+        given-names: Wahyudi
+      - family-names: Nicolas
+        given-names: "Prayogi Perdana"
+    year: 2021
+    journal: "Jurnal Ekonomi Manajemen Sistem Informasi"
+    volume: 2
+    issue: 4
+    doi: "10.31933/jemsi.v2i4.437"
 
   - type: book
     title: "Pengembangan Aplikasi Web Modern dengan DonatJS"
@@ -126,8 +255,8 @@ references:
       name: P4I
     isbn: "978-623-848-897-1"
     notes: >-
-      Buku referensi yang mendokumentasikan ekosistem DonatJS, tempat
-      SVG.js berfungsi sebagai perpustakaan komponen.
+      Reference book documenting the DonatJS ecosystem, where SVG.js
+      functions as the component library.
 
   - type: book
     title: "Optimasi Penggunaan SVG dalam Web Development"
@@ -139,8 +268,8 @@ references:
       name: P4I
     isbn: "978-623-876-765-6"
     notes: >-
-      Buku referensi yang mencakup teknik optimasi SVG yang langsung
-      relevan dengan pendekatan rendering SVG.js.
+      Reference book covering SVG optimization techniques directly
+      relevant to the DonatJS rendering approach.
 
   - type: book
     title: "Analisis Mendalam: Batasan Penggunaan AI dalam Pendidikan"
@@ -152,8 +281,8 @@ references:
       name: P4I
     isbn: "978-634-726-057-4"
     notes: >-
-      Buku referensi yang membahas batasan dan peluang teknologi AI
-      dalam konteks pendidikan Indonesia.
+      Reference book discussing the limitations and opportunities of
+      AI technology in Indonesian educational contexts.
 
   - type: article
     title: >-
@@ -183,25 +312,6 @@ references:
     start: 3219
     end: 3234
     doi: "10.1109/TVCG.2021.3059294"
-
-  - type: article
-    title: >-
-      Enhancing accessibility of web-based SVG buttons: An optimization
-      method and best practices
-    authors:
-      - family-names: Zhang
-        given-names: Mengxi
-      - family-names: Zhang
-        given-names: Yan
-      - family-names: Gao
-        given-names: Guangyong
-      - family-names: Liu
-        given-names: Huaxiao
-    year: 2023
-    journal: "Expert Systems with Applications"
-    volume: 231
-    pages: 121883
-    doi: "10.1016/j.eswa.2023.121883"
 
   - type: article
     title: >-
@@ -256,20 +366,6 @@ references:
     start: 3975
     end: 3999
     doi: "10.1007/s10639-022-11094-5"
-
-  - type: article
-    title: >-
-      Finding the Best Way to Deliver Online Educational Content in
-      Low-Resource Settings: Qualitative Survey Study
-    authors:
-      - family-names: Kynge
-        given-names: L.
-    year: 2020
-    journal: "Journal of Medical Internet Research"
-    volume: 22
-    issue: 5
-    pages: e16946
-    doi: "10.2196/16946"
 
   - type: article
     title: >-

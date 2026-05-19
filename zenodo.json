@@ -1,6 +1,6 @@
 {
   "title": "DonatJS Core: A Zero-Dependency JSON-Driven Client-Side Router and UI Rendering Engine",
-  "description": "DonatJS Core (script.js) adalah mesin rendering sisi klien (CSR) yang zero-dependency dan no-build step, mengubah data terstruktur (JSON) menjadi antarmuka web dinamis melalui sistem dispatch komponen polimorfik. Dikembangkan di Sismadi Lab (sismadi.com) — Experimental Zone, tempat Framework Lahir Sebelum Jadi Produk — milik PT Sismadi Langit Solusi. Sismadi Lab adalah ruang eksperimentasi terbuka tempat setiap framework dan tools diuji terlebih dahulu sebelum naik ke bahan ajar atau dikemas jadi produk. DonatJS adalah generasi ketiga dari silsilah framework yang lahir di lab yang sama: Ktupad (2019, EC00201952487) → BayamJS (2023, EC00202367008) → DonatJS (2024, EC00202414144), ketiganya terdaftar sebagai Hak Cipta resmi di DJKI.\n\nArsitektur DonatJS Core dibangun di atas tiga pilar utama: (1) Micro Routing System berbasis query string dengan History API dan resolusi fallback otomatis; (2) JSON-Driven Component Architecture di mana seluruh layout dan konten didefinisikan sebagai objek JavaScript datar (pages.*) tanpa markup HTML eksplisit; (3) Polymorphic Render Engine yang men-dispatch fungsi komponen (components[section]) berdasarkan field section pada data. Engine ini dilengkapi komponen bawaan: hero, features, article, titleHero, learningModule (dengan sidebar navigasi), quizEngine (terproteksi base64), certificate (dapat dicetak), slideViewer (PREP-structured), dan editor dataset live. Markdown-like lineRenderer mendukung code blocks, heading, skill bars, timeline steps, inline tables, dan form validation. SVG.js terintegrasi melalui svg.di() yang dieksekusi otomatis setiap navigasi rute.\n\nSismadi Lab pipeline: sismadi.com (ngoprek & proof of concept) → sismadi.sch.id (curated teaching materials) → sismadi.co.id (finished products). Tidak ada yang langsung ke produksi tanpa melewati lab.\n\nPaten terkait: S00202503129 (DJKI) untuk sistem rendering antarmuka aplikasi web berbasis dokumen data terstruktur dengan mekanisme pengiriman polimorfik tanpa ketergantungan framework.",
+  "description": "DonatJS Core (script.js) is a zero-dependency, no-build-step client-side rendering (CSR) engine that transforms structured data (JSON) into dynamic web interfaces through a polymorphic component dispatch system. Developed at Sismadi Lab (sismadi.com) — Experimental Zone, where Frameworks Are Born Before Becoming Products — owned by PT Sismadi Langit Solusi. Sismadi Lab is an open experimentation space where every framework and tool is tested before being promoted to teaching materials or packaged as a product.\n\nDonatJS is the third generation in the framework lineage born at the same lab: Ktupad (2019, EC00201952487) → BayamJS (2023, EC00202367008) → DonatJS (2024, EC00202414144), all registered as official copyrights at DJKI (Direktorat Jenderal Kekayaan Intelektual), Republic of Indonesia.\n\nDonatJS Core architecture rests on three pillars: (1) Micro Routing System based on query strings with History API and automatic fallback resolution; (2) JSON-Driven Component Architecture where all layouts and content are defined as flat JavaScript objects (pages.*) without explicit HTML markup; (3) Polymorphic Render Engine that dispatches component functions (components[section]) based on the section field in data. Built-in components include: hero, features, article, titleHero, learningModule (with navigation sidebar), quizEngine (base64-protected), certificate (printable), slideViewer (PREP-structured), and live dataset editor. A Markdown-like lineRenderer supports code blocks, headings, skill bars, timeline steps, inline tables, and form validation. SVG.js integrates via svg.di(), executed automatically on every route navigation.\n\nSismadi Lab pipeline: sismadi.com (tinkering & proof of concept) → sismadi.sch.id (curated teaching materials) → sismadi.co.id (finished products). Nothing goes straight to production without passing through the lab.\n\nPatent application: S00202503129 (DJKI) for a web application interface rendering system based on structured data documents with a polymorphic dispatch mechanism without framework dependencies.\n\nDemo: https://donatjs.github.io/core/ | Repository: https://github.com/donatjs/core/",
   "creators": [
     {
       "name": "Sismadi, Wawan",
@@ -36,9 +36,16 @@
     "PT Sismadi Langit Solusi",
     "quiz engine",
     "certificate verifier",
-    "slide viewer"
+    "slide viewer",
+    "microservices",
+    "MVC framework"
   ],
   "related_identifiers": [
+    {
+      "relation": "hasVersion",
+      "identifier": "https://github.com/donatjs/core",
+      "resource_type": "software"
+    },
     {
       "relation": "isSupplementTo",
       "identifier": "https://github.com/ktupad/core",
@@ -65,21 +72,32 @@
       "relation": "isRelatedTo",
       "identifier": "https://sismadi.com",
       "resource_type": "other"
+    },
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://donatjs.github.io/core/",
+      "resource_type": "other"
     }
   ],
   "references": [
-    "Sismadi, W. (2026). SVG.js: A Lightweight JSON-Driven SVG Icon Rendering Engine for Resource-Constrained Web Environments (v1.0.0). Zenodo. DOI: 10.5281/zenodo.20282077",
-    "Sismadi, W. (2026). Ktupad Core: A Lightweight PHP PDO Engine for JSON-Driven CRUD Operations (v1.0.0). Zenodo. DOI: 10.5281/zenodo.20273747",
+    "Sismadi, W. (2026). SVG.js: A Lightweight JSON-Driven SVG Icon Rendering Engine for Resource-Constrained Web Environments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20282077",
+    "Sismadi, W. (2026). Ktupad Core: A Lightweight PHP PDO Engine for JSON-Driven CRUD Operations (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20273747",
+    "Sismadi, W., Riadi, I., & Murinto. (2026). Penerapan Presensi Daring Berbasis WebAssembly dan Microservices untuk Pengenalan Wajah pada Learning Management System. EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi, 6(2). https://doi.org/10.51878/edutech.v6i2.9474",
+    "Sismadi, W., Martono, B. A., Hartini, E. F., & Putri, D. W. (2025). Implementasi Arsitektur Microservice pada Aplikasi Bank Sampah Digital Berbasis DonatJS. CENDEKIA Jurnal Ilmu Pengetahuan, 5(4). https://doi.org/10.51878/cendekia.v5i4.7140",
+    "Sismadi, W., Martono, B. A., Susanto, Y., & Muzaeni, A. (2025). Perbandingan Performa Framework MVC dalam Sistem Kehadiran Berbasis Pengenalan Wajah. EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi, 5(1). https://doi.org/10.51878/edutech.v5i1.4405",
+    "Sismadi, W., Martono, B. A., Susanto, Y., & Muzaeni, A. (2024). Implementasi Arsitektur Microservices pada Web Aplikasi Penerimaan Mahasiswa Baru. EDUTECH Jurnal Inovasi Pendidikan Berbantuan Teknologi, 4(2). https://doi.org/10.51878/edutech.v4i2.3062",
     "Sismadi, W. (2024). Pengembangan Aplikasi Web Modern dengan DonatJS. P4I. ISBN: 978-623-848-897-1",
     "Sismadi, W. (2025). Optimasi Penggunaan SVG dalam Web Development. P4I. ISBN: 978-623-876-765-6",
     "Sismadi, W. (2025). Analisis Mendalam: Batasan Penggunaan AI dalam Pendidikan. P4I. ISBN: 978-634-726-057-4",
-    "Riet, J., Malavolta, I., & Ghaleb, T. (2023). Optimise along the way: An industrial case study on web performance. Journal of Systems and Software, 198, 111593. DOI: 10.1016/j.jss.2022.111593",
-    "Ekpobimi, H. O., Kandekere, R. C., & Fasanmade, A. A. (2024). Conceptual Framework for Enhancing Front-end Web Performance: Strategies and Best Practices. Global Journal of Advanced Research and Reviews, 2(1), 099–107. DOI: 10.58175/gjarr.2024.2.1.0032",
-    "Okai-Ugbaje, S., Ardzejewska, K., & Imran, A. (2022). A mobile learning framework for higher education in resource constrained environments. Education and Information Technologies, 17(7), 3975–3999. DOI: 10.1007/s10639-022-11094-5",
-    "Madni, S. H. H., Ali, J., Husnain, H. A., Masum, M. H., Mustafa, S., Shuja, J., Maray, M., & Hosseini, S. (2022). Factors Influencing the Adoption of IoT for E-Learning in Higher Educational Institutes in Developing Countries. Frontiers in Psychology, 13, 915596. DOI: 10.3389/fpsyg.2022.915596",
-    "Schwab, M., Saffo, D., Bond, N., Sinha, S., Dunne, C., Huang, J., Tompkin, J., & Borkin, M. A. (2022). Scalable Scalable Vector Graphics: Automatic Translation of Interactive SVGs to a Multithread VDOM for Fast Rendering. IEEE Transactions on Visualization and Computer Graphics, 28(9), 3219–3234. DOI: 10.1109/TVCG.2021.3059294"
+    "Sismadi, W., Martono, B. A., & Widyastuti, T. (2022). Comparative Analysis of CodeIgniter, Laravel and Ktupad Frameworks: Case Study Online Exam Applications. Indonesian Journal of Applied Research (IJAR).",
+    "Sismadi, W., Darmawan, I., Wahyudi, & Nicolas, P. P. (2021). Implementasi Pengembangan Aplikasi Ujian Online Menggunakan Ktupad MVC Framework. Jurnal Ekonomi Manajemen Sistem Informasi, 2(4). https://doi.org/10.31933/jemsi.v2i4.437",
+    "Riet, J., Malavolta, I., & Ghaleb, T. (2023). Optimise along the way: An industrial case study on web performance. Journal of Systems and Software, 198, 111593. https://doi.org/10.1016/j.jss.2022.111593",
+    "Ekpobimi, H. O., Kandekere, R. C., & Fasanmade, A. A. (2024). Conceptual Framework for Enhancing Front-end Web Performance: Strategies and Best Practices. Global Journal of Advanced Research and Reviews, 2(1), 099–107. https://doi.org/10.58175/gjarr.2024.2.1.0032",
+    "Okai-Ugbaje, S., Ardzejewska, K., & Imran, A. (2022). A mobile learning framework for higher education in resource constrained environments. Education and Information Technologies, 17(7), 3975–3999. https://doi.org/10.1007/s10639-022-11094-5",
+    "Madni, S. H. H., Ali, J., Husnain, H. A., Masum, M. H., Mustafa, S., Shuja, J., Maray, M., & Hosseini, S. (2022). Factors Influencing the Adoption of IoT for E-Learning in Higher Educational Institutes in Developing Countries. Frontiers in Psychology, 13, 915596. https://doi.org/10.3389/fpsyg.2022.915596",
+    "Schwab, M., Saffo, D., Bond, N., Sinha, S., Dunne, C., Huang, J., Tompkin, J., & Borkin, M. A. (2022). Scalable Scalable Vector Graphics: Automatic Translation of Interactive SVGs to a Multithread VDOM for Fast Rendering. IEEE Transactions on Visualization and Computer Graphics, 28(9), 3219–3234. https://doi.org/10.1109/TVCG.2021.3059294"
   ],
-  "notes": "Konteks Kekayaan Intelektual: DonatJS Core terdaftar sebagai Hak Cipta EC00202414144 di Direktorat Jenderal Kekayaan Intelektual (DJKI), Republik Indonesia. Permohonan paten sederhana: S00202503129 (DJKI) untuk sistem rendering antarmuka berbasis dokumen data terstruktur dengan mekanisme pengiriman polimorfik. Silsilah fondasi: Ktupad Core (EC00201952487, DOI: 10.5281/zenodo.20273747) dan BayamJS (EC00202367008). Buku referensi terkait: 'Pengembangan Aplikasi Web Modern dengan DonatJS' (P4I, 2024, ISBN 978-623-848-897-1); 'Optimasi Penggunaan SVG dalam Web Development' (P4I, 2025, ISBN 978-623-876-765-6); 'Analisis Mendalam: Batasan Penggunaan AI dalam Pendidikan' (P4I, 2025, ISBN 978-634-726-057-4). SVG.js (DOI: 10.5281/zenodo.20282077) adalah komponen ikon terintegrasi dalam ekosistem DonatJS. SINTA Author ID: 6848496. NIDN: 0816087703. Dikembangkan di Sismadi Lab — ruang eksperimen framework perangkat lunak PT Sismadi Langit Solusi (https://sismadi.com).",
+  "notes": "Intellectual Property Context: DonatJS Core is registered as Copyright EC00202414144 at the Direktorat Jenderal Kekayaan Intelektual (DJKI), Republic of Indonesia. Patent application (simple patent): S00202503129 (DJKI) for a structured-data-document-based web interface rendering system with polymorphic dispatch mechanism. Foundational lineage: Ktupad Core (EC00201952487, https://doi.org/10.5281/zenodo.20273747) and BayamJS (EC00202367008). Related reference books: 'Pengembangan Aplikasi Web Modern dengan DonatJS' (P4I, 2024, ISBN 978-623-848-897-1); 'Optimasi Penggunaan SVG dalam Web Development' (P4I, 2025, ISBN 978-623-876-765-6); 'Analisis Mendalam: Batasan Penggunaan AI dalam Pendidikan' (P4I, 2025, ISBN 978-634-726-057-4). SVG.js (https://doi.org/10.5281/zenodo.20282077) is the integrated icon component in the DonatJS ecosystem. SINTA Author ID: 6848496. NIDN: 0816087703. Developed at Sismadi Lab — software framework experimentation space of PT Sismadi Langit Solusi (https://sismadi.com). Demo: https://donatjs.github.io/core/ | Repository: https://github.com/donatjs/core/",
   "communities": [
     {
       "identifier": "zenodo"
