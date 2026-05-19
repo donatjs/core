@@ -1,7 +1,7 @@
 # DonatJS Core
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20282077.svg)](https://doi.org/10.5281/zenodo.20282077)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20289543.svg)](https://doi.org/10.5281/zenodo.20289543)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/donatjs/core)
 [![HKI](https://img.shields.io/badge/HKI-EC00202414144-orange.svg)](https://dgip.go.id)
 [![Live Demo](https://img.shields.io/badge/demo-live%20preview-blueviolet.svg)](https://donatjs.github.io/core/)
@@ -156,7 +156,7 @@ If you use DonatJS Core in academic work, please cite it as:
   title     = {{DonatJS Core: A Zero-Dependency JSON-Driven Client-Side Router and UI Rendering Engine}},
   year      = {2024},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20282077},
+  doi       = {10.5281/zenodo.20289543},
   url       = {https://github.com/donatjs/core}
 }
 ```
