@@ -2,8 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20282077.svg)](https://doi.org/10.5281/zenodo.20282077)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ktupad/donat)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/donatjs/core)
 [![HKI](https://img.shields.io/badge/HKI-EC00202414144-orange.svg)](https://dgip.go.id)
+[![Live Demo](https://img.shields.io/badge/demo-live%20preview-blueviolet.svg)](https://donatjs.github.io/core/)
+
 
 A zero-dependency, JSON-driven client-side router and UI rendering engine for modern web portals.
 
@@ -155,7 +157,7 @@ If you use DonatJS Core in academic work, please cite it as:
   year      = {2024},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20282077},
-  url       = {https://github.com/ktupad/donat}
+  url       = {https://github.com/donatjs/core}
 }
 ```
 
